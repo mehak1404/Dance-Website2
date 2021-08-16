@@ -1,0 +1,16 @@
+extends base.pug
+
+block style
+    link(rel="stylesheet" type="text/css" href="../static/style.css")
+    link(rel="stylesheet" type="text/css" href="../static/stylecontact.css")
+
+block content 
+    h1 Contact Us
+    .container 
+        form(action="/contact", method="post" Class = "myform") 
+            input(type="text", name="Name" Class= "Myinput" placeholder = "Enter your name")
+            input(type="phone", name="number" Class= "Myinput" placeholder = "Enter your phone number")
+            input(type="email", name="email" Class= "Myinput" placeholder = "Enter your Email")
+            input(type="text", name="adress" Class= "Myinput" placeholder = "Enter your Address")
+            input(type="text", name="desc" Class= "Myinput" placeholder = "Enter your concern")
+            button(type="submit" Class="btn")|Submit 

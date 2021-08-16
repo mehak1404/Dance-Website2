@@ -1,0 +1,64 @@
+doctype html
+html
+    head 
+        title Dance Academy Website
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        style
+            include ../static/style.css 
+
+    body 
+        nav#navbar 
+            ul
+                #logo 
+                    img(src="../static/imgs/logo.png" alt="")
+                    | MDA
+                li #[a(href = "/") Home ]              
+                li #[a(href = "/") About Us ]
+                li #[a(href = "/") Services ]
+                li #[a(href = "/") Class Info]
+                li #[a(href = "/contact") Contanct Us] 
+        section#intro 
+            div Welcome to Mehak's Dance Academy 
+            div.small Dance Eat Sleep and Repeat 
+
+        section#mission 
+            h1 Our Mission
+            div.card
+                h3 Dance Perfection
+                .card-box 
+                    .card-img
+                        img(src="../static/imgs/1.png" alt="")
+                    .card-content  
+                        p This is the best dance academy of the Universe
+
+            div.card
+                h3 Dance the way you like
+                .card-box 
+                    .card-img
+                        img(src="../static/imgs/2.png" alt="")
+
+                    .card-content
+                        p This is the best dance academy of the Universe  
+            div.card
+                h3 Expert teaching
+                .card-box 
+                    .card-img
+                        img(src="../static/imgs/3.png" alt="")
+
+                    .card-content  
+                        p This is the best dance academy of the Universe  
+
+        section#sponsers  
+            h1 Our Sponsers 
+            .sponsers-imgs 
+                img(src="../static/imgs/logo1.png", alt="" Class="imgs") 
+                img(src="../static/imgs/logo2.png", alt="" Class="imgs") 
+                img(src="../static/imgs/logo3.png", alt="" Class="imgs") 
+                img(src="../static/imgs/logo4.png", alt="" Class="imgs") 
+
+        footer#footer 
+            h3  Copyright &#169; 2021. Made by Mehak | All rights reserved
+        script
+            include ../static/script.js        

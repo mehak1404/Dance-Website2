@@ -1,0 +1,50 @@
+extends base.pug
+
+block style
+    link(rel="stylesheet" type="text/css" href="../static/style.css")
+
+block content 
+    
+        section#intro 
+            div Welcome to Mehak's Dance Academy 
+            div.small Dance Eat Sleep and Repeat 
+
+        section#mission 
+            h1 Our Mission
+            div.card
+                h3 Dance Perfection
+                .card-box 
+                    .card-img
+                        img(src="../static/imgs/1.png" alt="")
+                    .card-content  
+                        p This is the best dance academy of the Universe
+
+            div.card
+                h3 Dance the way you like
+                .card-box 
+                    .card-img
+                        img(src="../static/imgs/2.png" alt="")
+
+                    .card-content
+                        p This is the best dance academy of the Universe  
+            div.card
+                h3 Expert teaching
+                .card-box 
+                    .card-img
+                        img(src="../static/imgs/3.png" alt="")
+
+                    .card-content  
+                        p This is the best dance academy of the Universe  
+
+        section#sponsers  
+            h1 Our Sponsers 
+            .sponsers-imgs 
+                img(src="../static/imgs/logo1.png" alt="" Class="imgs") 
+                img(src="../static/imgs/logo2.png" alt="" Class="imgs") 
+                img(src="../static/imgs/logo3.png" alt="" Class="imgs") 
+                img(src="../static/imgs/logo4.png" alt="" Class="imgs") 
+
+    
+
+block scripts
+    script(src='/static/script.js') 
